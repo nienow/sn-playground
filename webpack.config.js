@@ -8,7 +8,7 @@ const version = PACKAGE.version;
 module.exports = (env, argv) => ({
   mode: 'production',
   entry: {
-    main: 'index.tsx',
+    main: 'index.ts',
     demo: 'demo/demo.tsx'
   },
   output: {
@@ -77,7 +77,7 @@ module.exports = (env, argv) => ({
     }),
     new HtmlWebpackPlugin({
       filename: "demo.html",
-      template: "./src/index.html",
+      template: "./src/demo/demo.html",
       chunks: ["demo"]
     }),
     new CopyPlugin({
