@@ -1,0 +1,11 @@
+{
+  "identifier": "dev.randombits.playground",
+  "name": "Code Playground",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "version": "1.0.0",
+  "description": "A html/js/css playground editor",
+  "url": "https://nienow.github.io/sn-playground/",
+  "download_url": "https://nienow.github.io/sn-playground/latest.zip",
+  "latest_url": "https://nienow.github.io/sn-playground/ext.json"
+}

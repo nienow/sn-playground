@@ -1,0 +1,9 @@
+{
+  "identifier": "dev.randombits.playground.local",
+  "name": "Code Playground (local)",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "version": "0.0.1",
+  "description": "",
+  "url": "http://localhost:8080/"
+}
