@@ -1,19 +1,12 @@
-# Standard Notes Editor Extension Template
+# Standard Notes Code Playground Extension
 
-Full Documentation & Demo at https://randombits.dev/standard-notes/template
+An HTML, JS, and CSS code playground for standard notes. It uses
+google's [playground-elements](https://github.com/google/playground-elements) components.
 
-## Getting Started
+See a [demo](https://nienow.github.io/sn-playground/demo.html).
 
-Click on the `Use this template` button to create a new repo based on this template.
+Install the extension using: https://nienow.github.io/sn-playground/ext.json
 
-Then clone your new repo, install dependencies, and start the dev server:
+Learn how to install extensions: https://randombits.dev/standard-notes/installing-extensions
 
-```
-# Install dependencies
-pnpm install
-
-# Start Dev Server
-pnpm run start
-```
-
-The demo page should be launched automatically.
+Learn how to create your own extensions: https://randombits.dev/standard-notes/creating-extensions
