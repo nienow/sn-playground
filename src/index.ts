@@ -1,17 +1,32 @@
 import './index.scss';
-import * as blah from 'playground-elements';
+import 'playground-elements';
 
 import snApi from 'sn-extension-api';
 import {parseText} from './utils';
-
-console.log(!blah);
 
 snApi.initialize({
   debounceSave: 400
 });
 
+const project = document.querySelector('playground-project');
+const editor = document.querySelector('playground-file-editor');
+let changeListenerInit = false;
+
 snApi.subscribe(() => {
   const snippet = parseText();
-  const ide = document.querySelector('playground-project');
-  ide.config = snippet;
+  if (snApi.locked) {
+    editor.setAttribute('readonly', 'true');
+  } else {
+    editor.removeAttribute('readonly');
+  }
+
+  if (!changeListenerInit) {
+    changeListenerInit = true;
+    const code = editor.shadowRoot.querySelector('playground-code-editor');
+    code.addEventListener('change', () => {
+      snApi.text = JSON.stringify(project.config);
+    });
+  }
+
+  project.config = snippet;
 });
