@@ -1,5 +1,41 @@
 @import 'sn-extension-api/dist/sn.min.css';
 
+:root {
+  --playground-preview-width: 50%;
+  --playground-code-background: var(--sn-stylekit-background-color);
+  --playground-code-gutter-background: var(--sn-stylekit-contrast-background-color);
+  --playground-tab-bar-background: var(--sn-stylekit-contrast-background-color);
+  --playground-tab-bar-foreground-color: var(--sn-stylekit-contrast-foreground-color);
+  --playground-tab-bar-active-color: var(--sn-stylekit-contrast-foreground-color);
+  --playground-tab-bar-indicator-color: var(--sn-stylekit-accessory-tint-color-1);
+  --playground-preview-toolbar-background: var(--sn-stylekit-contrast-background-color);
+  --playground-preview-toolbar-foreground-color: var(--sn-stylekit-contrast-foreground-color);
+  --playground-border: var(--sn-stylekit-border-color);
+  --playground-code-padding: 10px;
+
+  --playground-code-default-color: var(--sn-stylekit-foreground-color);
+  --playground-code-atom-color: var(--sn-stylekit-accessory-tint-color-2);
+  --playground-code-attribute-color: var(--sn-stylekit-accessory-tint-color-3);
+  --playground-code-builtin-color: var(--sn-stylekit-foreground-color);
+  --playground-code-callee-color: var(--sn-stylekit-accessory-tint-color-5);
+  --playground-code-operator-color: var(--sn-stylekit-foreground-color);
+  --playground-code-variable-color: var(--sn-stylekit-accessory-tint-color-6);
+  --playground-code-property-color: var(--sn-stylekit-accessory-tint-color-3);
+  --playground-code-string-color: var(--sn-stylekit-foreground-color);
+  --playground-code-string-2-color: var(--sn-stylekit-foreground-color);
+  --playground-code-def-color: var(--sn-stylekit-accessory-tint-color-6);
+  --playground-code-keyword-color: var(--sn-stylekit-accessory-tint-color-1);
+  --playground-code-local-color: var(--sn-stylekit-foreground-color);
+  --playground-code-variable-2-color: var(--sn-stylekit-foreground-color);
+  --playground-code-variable-3-color: var(--sn-stylekit-foreground-color);
+  --playground-code-tag-color: var(--sn-stylekit-accessory-tint-color-1);
+  --playground-code-type-color: var(--sn-stylekit-foreground-color);
+  --playground-code-qualifier-color: var(--sn-stylekit-foreground-color);
+  --playground-code-number-color: var(--sn-stylekit-foreground-color);
+  --playground-code-meta-color: var(--sn-stylekit-foreground-color);
+
+}
+
 body,
 html {
   background-color: var(--sn-stylekit-background-color);
@@ -12,24 +48,8 @@ html {
   width: 100%;
 }
 
-.main {
-  padding: 20px;
-}
-
-textarea {
-  background-color: inherit;
-  outline: none;
-  padding: 10px;
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  line-height: 1.4;
-  resize: none;
-  color: var(--sn-stylekit-foreground-color);
-}
-
-button {
-  background-color: var(--sn-stylekit-contrast-background-color);
-  border: 1px solid var(--sn-stylekit-border-color);
-  cursor: pointer;
+playground-ide {
+  border: none;
+  height: 100vh;
+  overflow: hidden;
 }

@@ -47,8 +47,8 @@ const DemoApp = () => {
       </div>
       <div className="content">
         <div className="content-header">
-          <div><input id="editingDisabled" type="checkbox" checked={disabled} onChange={onToggleDisabled}></input><label
-            htmlFor="editingDisabled"> Editing Disabled</label></div>
+          {/*<div><input id="editingDisabled" type="checkbox" checked={disabled} onChange={onToggleDisabled}></input><label*/}
+          {/*  htmlFor="editingDisabled"> Editing Disabled</label></div>*/}
           <div><input id="isDark" type="checkbox" checked={theme === 'dark'} onChange={onChangeTheme}></input><label
             htmlFor="isDark"> Dark Theme</label></div>
           <div id="last-saved"></div>

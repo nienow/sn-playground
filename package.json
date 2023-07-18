@@ -1,5 +1,5 @@
 {
-  "name": "sn-extension-template",
+  "name": "sn-playground",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack serve --mode development",
@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@preact/compat": "^17.1.2",
+    "playground-elements": "^0.18.0",
     "preact": "^10.13.2",
     "sn-extension-api": "^0.2.1"
   },
