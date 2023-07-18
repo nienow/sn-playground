@@ -1,7 +1,6 @@
 @import 'sn-extension-api/dist/sn.min.css';
 
 :root {
-  --playground-preview-width: 50%;
   --playground-code-background: var(--sn-stylekit-background-color);
   --playground-code-gutter-background: var(--sn-stylekit-contrast-background-color);
   --playground-tab-bar-background: var(--sn-stylekit-contrast-background-color);
@@ -48,8 +47,21 @@ html {
   width: 100%;
 }
 
-playground-ide {
-  border: none;
+.main-container {
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+playground-file-editor {
+  flex: 1 1 auto;
+}
+
+playground-preview::part(preview-toolbar) {
+  display: none;
+}
+
+playground-preview {
+  height: min(50%, 500px);
 }

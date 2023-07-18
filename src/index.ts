@@ -12,6 +12,6 @@ snApi.initialize({
 
 snApi.subscribe(() => {
   const snippet = parseText();
-  const ide = document.querySelector('playground-ide');
+  const ide = document.querySelector('playground-project');
   ide.config = snippet;
 });

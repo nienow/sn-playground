@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<playground-ide resizable={true} lineWrapping={false}></playground-ide>
+<playground-project id="sn-playground">
+
+</playground-project>
+<div class="main-container">
+  <playground-tab-bar project="sn-playground" editor="pg-editor"></playground-tab-bar>
+  <playground-file-editor id="pg-editor" project="sn-playground">
+
+  </playground-file-editor>
+  <playground-preview project="sn-playground"></playground-preview>
+</div>
 </body>
 </html>
