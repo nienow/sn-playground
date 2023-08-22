@@ -1,3 +1,7 @@
+# Warning: This extension no longer works with Standard Notes
+
+Because of changes regarding security of iframes in Standard Notes, this extension no longer works.
+
 # Standard Notes Code Playground Extension
 
 An HTML, JS, and CSS code playground for standard notes. It uses
